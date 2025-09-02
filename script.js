@@ -1,0 +1,2 @@
+document.getElementById('year').textContent = new Date().getFullYear();
+function handleSubmit(e){e.preventDefault();const data=Object.fromEntries(new FormData(e.target).entries());console.log('Contact form submission (demo):',data);alert('Thanks — we\'ll be in touch shortly!');e.target.reset();}
